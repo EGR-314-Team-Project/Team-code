@@ -1,16 +1,22 @@
 #include "mcc_generated_files/mcc.h"
+
 #include <stdio.h>
 
 #define DELAY_MS 1000
 
 // Function prototypes
+
 void initSPI(void);
 
 int main(void)
+
 {
     SYSTEM_Initialize();
+    
     SPI1_Initialize();
+    
     SPI1_Open(SPI1_DEFAULT);
+    
     EUSART2_Initialize();
 
     while (1)
