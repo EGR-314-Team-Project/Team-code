@@ -11,6 +11,7 @@ void initSPI(void);
 int main(void)
 
 {
+
     SYSTEM_Initialize();
     
     SPI1_Initialize();
